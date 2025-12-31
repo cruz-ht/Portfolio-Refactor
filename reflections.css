@@ -1,0 +1,227 @@
+body {
+    background-image:linear-gradient(to bottom right, #e3dadd, #a29b9d, #e3dadd);
+    padding:0;
+    margin:0;
+}
+
+
+
+header{
+    background:#827b7d;
+    padding-top: 1em;
+    text-align: left;
+}
+header h1{
+    font-size: 2.2em;
+    font-style: oblique;
+    font-weight: 400px;
+    padding-left: 1em;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    padding: 0.5em;
+    gap: 1em;
+    list-style-type: none;
+    font-size: 1.3em;
+}
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: #625a5d80;
+    padding: 0.5em;
+    color:#e3dadd;
+}
+
+
+
+/* HIDDEN HAMBURGER MENU*/
+.hamburger-Menu{
+    display: none;
+}
+/* ------ */
+
+
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.article-box{
+    text-align: center;
+    margin: 4em 5em;
+    background-color: #a29b9d;
+    border: 0.5em groove #625a5d; 
+    border-radius: 1em;
+}
+
+.article{
+    text-align: center;
+    font-style:normal;
+    font-size: 1.3em;
+    margin: 1.4em;
+    line-height: 1.3em;
+}
+h2 {
+    font-style: oblique;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+
+
+
+
+footer{
+    background:#827b7d;
+    width: 100%;
+    text-align: center;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em 0 ;
+}
+.footer-nav ul {
+    display: flex;
+    gap: 2.5em;
+    list-style: none;
+}
+.footer-nav a {
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+.footer-nav a:hover {
+    color: #e3dadd;
+}
+.social-links {
+    display: flex;
+    gap: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.social-links img {
+    width: 1.7em;
+}
+
+
+
+
+
+
+
+/* -------------Hamburger Menu------------------- */
+
+@media screen and (max-width: 852px) {
+
+.hamburger-Menu{
+    display: block;
+    position: absolute; 
+    top: 0.6em;
+    right: 0.5em;
+    width: 3.5em;
+}
+header h1{
+    padding-bottom: 1em;
+}
+.navbar.mobile-menu{
+    display:flex;
+}
+.navbar{
+    height: 100%;
+    width: 100%;
+    display: none;
+    top:0;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    background-color: #827b7d80;
+}
+.navbar ul{
+    flex-direction: column-reverse;
+    gap: 2.5em;
+}
+}
+/* -------------------------------------------- */
+
+/* ALL MEDIA QUERIES */
+
+
+/* Small Mobile Devices */
+@media (min-width:320px) and (max-width: 480px) {
+
+
+.article-box{
+    margin: 3em 1.5em;
+}
+.article{
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+.footer-nav ul {
+    gap: 1em;
+}
+.footer-nav a {
+    font-size: 1em;
+}
+}
+/*-------------------------------------------- */
+
+/* Large Mobile Devices */
+@media (min-width:481px) and (max-width: 767px) {
+.article-box{
+    margin: 3em 2.7em;
+}
+.article{
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+}
+/* -------------------------------------------- */
+
+/* Tablets and Small Desktops */
+@media (min-width:768px) and (max-width: 1024px) {
+.article-box{
+    margin: 3em 7.5em;
+}
+h2{
+    font-size: 1.7em;
+}
+.footer-nav a {
+    font-size: 1.3em;
+}
+}
+/* ---------------------------------------- */
+
+/* Desktops and Laptops */
+@media (min-width:1025px) and (max-width: 1200px) {
+.article-box{
+    margin: 3em 9.7em;
+}
+h2{
+    font-size: 1.7em;
+}
+.footer-nav a {
+    font-size: 1.3em;
+}
+}
+
+
+/* Large Desktops */
+@media (min-width:1201px) and (max-width: 1600px) {
+.article-box{
+    margin: 3em 12em;
+}
+h2{
+    font-size: 1.9em;
+}
+.footer-nav a {
+    font-size: 1.3em;
+}
+}

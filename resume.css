@@ -1,0 +1,134 @@
+body {
+    background-image:linear-gradient(to bottom right, #e3dadd, #a29b9d, #e3dadd);
+    margin:0;
+    padding:0;
+}
+
+
+header{
+    background:#827b7d;
+    padding-top: 1em;
+    text-align: left;
+}
+header h1{
+    font-size: 2.2em;
+    font-style: oblique;
+    font-weight: 400px;
+    padding-left: 1em;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    padding: 0.5em;
+    gap: 1em;
+    list-style-type: none;
+    font-size: 1.3em;
+}
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: #625a5d80;
+    padding: 0.5em;
+    color:#e3dadd;
+}
+
+/* HIDDEN HAMBURGER MENU*/
+.hamburger-Menu{
+    display: none;
+}
+/* ------ */
+
+footer{
+    background:#827b7d;
+    width: 100%;
+    text-align: center;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em 0 ;
+}
+.footer-nav ul {
+    display: flex;
+    gap: 2.5em;
+    list-style: none;
+}
+.footer-nav a {
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+.footer-nav a:hover {
+    color: #e3dadd;
+}
+.social-links {
+    display: flex;
+    gap: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.social-links img {
+    width: 1.7em;
+}
+
+/* -------------Hamburger Menu------------------- */
+
+@media screen and (max-width: 852px) {
+
+.hamburger-Menu{
+    display: block;
+    position: absolute; 
+    top: 0.6em;
+    right: 0.5em;
+    width: 3.5em;
+}
+header h1{
+    padding-bottom: 1em;
+}
+.navbar.mobile-menu{
+    display:flex;
+}
+.navbar{
+    height: 100%;
+    width: 100%;
+    display: none;
+    top:0;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    background-color: #827b7d80;
+}
+.navbar ul{
+    flex-direction: column-reverse;
+    gap: 2.5em;
+}
+}
+
+
+/* -------------------------------------------- */
+
+/* ALL MEDIA QUERIES */
+
+
+/* Small Mobile Devices */
+@media (min-width:320px) and (max-width: 480px) {
+
+.footer-nav ul {
+    gap: 1em;
+}
+.footer-nav a {
+    font-size: 1em;
+}
+}
+
+/* ------------------------------------------- */
+
+/* Tablets and Desktops */
+@media (min-width:768px) and (max-width: 1600px) {
+.footer-nav a {
+    font-size: 1.3em;
+}
+}

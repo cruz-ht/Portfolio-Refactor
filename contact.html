@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC | Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="contact.html">Contact Page</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="reflections.html">Reflections</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <img src="Images/hamburgericon.png" alt="Hamburger Menu" class="hamburger-Menu">
+    
+    <section>
+        <h3> Thanks for visiting!</h3>
+
+        <p class="norm-text">Have a question, feedback, or just want to connect? <br>Feel free to reach out using the form below, and I'll get back to you soon.</p>
+    </section>
+
+
+    <main class="form-container">
+        <form id="contact-form" action="#" novalidate>
+            <!-- NAME -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="inputs"> 
+            <p class="error-message" id="name-error"></p>
+
+            <!-- EMAIL -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="inputs">
+            <p class="error-message" id="email-error"></p>
+
+            <!-- NUMBER -->
+            <label for="number">Phone Number:</label>
+            <input type="tel" id="number" name="number" class="inputs">
+            <p class="error-message" id="number-error"></p>
+
+            <!-- MESSAGE -->
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here" class="inputs" rows="8"></textarea>
+            <p class="error-message" id="message-error"></p>
+
+            <!-- SUBMIT BUTTON -->
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reflections.html">Reflections</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        
+            <div class="social-links">
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                    <img src="Images/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                    <img src="Images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://x.com/" target="_blank" aria-label="Twitter">
+                    <img src="Images/twitter.png" alt="Twitter">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

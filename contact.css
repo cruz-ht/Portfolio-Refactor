@@ -1,0 +1,296 @@
+body {
+    background-image:linear-gradient(to bottom right, #e3dadd, #a29b9d, #e3dadd);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0;
+    padding:0;
+}
+ 
+
+
+
+
+header{
+    background:#827b7d;
+    padding-top: 1em;
+    text-align: left;
+}
+header h1{
+    font-size: 2.2em;
+    font-style: oblique;
+    font-weight: 400px;
+    padding-left: 1em;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    margin: 0;
+    padding: 0.5em;
+    gap: 1em;
+    list-style-type: none;
+    font-size: 1.3em;
+}
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: #625a5d80;
+    padding: 0.5em;
+    color:#e3dadd;
+}
+
+
+
+/* HIDDEN HAMBURGER MENU*/
+.hamburger-Menu{
+    display: none;
+}
+/* ------ */
+
+
+
+/* TEXT ABOVE FORM */
+h3{
+    font-style: oblique;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 2.5em;
+}
+.norm-text{
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: -0.1em;
+}
+
+
+
+/* CONTACT FORM */
+.form-container{
+    display: flex;
+    justify-content: center;
+    background-color: #a29b9d;
+    border: 0.3em solid #625a5d;
+    border-radius: 10em;
+    padding: 4em 0;
+    margin: 2em 5em 5em;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:0.4em;
+    font-weight: bold;
+}
+.inputs{
+    padding: 0.7em;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 1.5em;
+    font-size: 1em;
+    resize: none;
+}
+.error-message{ 
+    margin-top: -0.2em;
+    font-size: 1em;
+    font-weight: normal;
+
+}
+button{
+    border: 0.2em solid #d3d3d3; 
+    border-radius: 2em;
+    padding: 0.7em; 
+    cursor: pointer;
+}
+button:hover{
+    background-color: #d3d3d3;
+}
+button:active{
+    transform: translate(0,2px);
+}
+
+
+
+
+
+
+footer{
+    background:#827b7d;
+    width: 100%;
+    text-align: center;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em 0 ;
+}
+.footer-nav ul {
+    display: flex;
+    gap: 2.5em;
+    list-style: none;
+}
+.footer-nav a {
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+.footer-nav a:hover {
+    color: #e3dadd;
+}
+.social-links {
+    display: flex;
+    gap: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.social-links img {
+    width: 1.7em;
+}
+
+
+
+
+
+/* -------------Hamburger Menu------------------- */
+
+@media screen and (max-width: 852px) {
+
+.hamburger-Menu{
+    display: block;
+    position: absolute; 
+    top: 0.6em;
+    right: 0.5em;
+    width: 3.5em;
+}
+header h1{
+    padding-bottom: 1em;
+}
+.navbar.mobile-menu{
+    display:flex;
+}
+.navbar{
+    height: 100%;
+    width: 100%;
+    display: none;
+    top:0;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    background-color: #827b7d80;
+}
+.navbar ul{
+    flex-direction: column-reverse;
+    gap: 2.5em;
+}
+}
+/* -------------------------------------------- */
+
+/* ALL MEDIA QUERIES */
+
+
+/* Small Mobile Devices */
+@media (min-width:320px) and (max-width: 480px) {
+
+.footer-nav ul {
+    gap: 1em;
+}
+.footer-nav a {
+    font-size: 1em;
+}
+
+
+h3{
+    font-size: 1.2em;
+    margin-top: 2em;
+}
+.norm-text{
+    font-size: 1em;
+}
+.form-container{
+    border-radius: 4.2em;
+    margin: 2em 1.5em 5em;
+    padding: 2.7em 0;
+
+}
+.inputs{
+    padding: 0.5em;
+}
+}
+/* -------------------------------------------- */
+
+
+/* Large Mobile Devices */
+@media (min-width:481px) and (max-width: 767px) {
+.form-container{
+    border-radius: 6.5em;
+    margin: 2em 2em 5em;
+    padding: 3.5em 0;
+    font-size: 1.1em;
+}
+h3{
+    margin-top: 2.3em;
+}
+.norm-text{
+    font-size: 1.1em;
+}
+}
+/* ------------------------------------- */
+
+/* Tablets and Small Desktops */
+@media (min-width:768px) and (max-width: 1024px) {
+.form-container{
+    border-radius: 7.2em;
+    margin: 2em 7.5em 5em;
+    font-size: 1.2em;
+}
+h3{
+    font-size: 1.7em;
+}
+.norm-text{
+    font-size: 1.4em;
+}
+.footer-nav a {
+    font-size: 1.3em;
+}
+}
+/* ------------------------------------- */
+
+/* Desktops and Laptops */
+@media (min-width:1025px) and (max-width: 1200px) {
+.form-container{
+
+    margin: 2em 10em 5em;
+    font-size: 1.2em;
+}
+h3{
+    font-size: 1.7em;
+}
+.norm-text{
+    font-size: 1.4em;
+}
+
+.footer-nav a {
+    font-size: 1.3em;
+}
+}
+/* ----------------------------------  */
+
+/* Large Desktops */
+@media (min-width:1201px) and (max-width: 1600px) {
+.form-container{
+
+    margin: 2em 14.2em 5em;
+    font-size: 1.1em;
+}
+h3{
+    font-size: 2em;
+}
+.norm-text{
+    font-size: 1.4em;
+}
+
+.footer-nav a {
+    font-size: 1.3em;
+}
+}
