@@ -60,7 +60,6 @@ header{
 .udemy-challenge{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
     grid-gap: 3em;
     margin: 5em 1.5em;
 
@@ -103,7 +102,7 @@ header{
     .spotlight-summary {
         margin: 0 3em 1.7em;
         line-height: 1.2em;
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
     a {
         display: inline-block;
@@ -142,8 +141,8 @@ footer{
     ul {
         display: flex;
         gap: 2.5em;
+        padding:0;
         list-style: none;
-    
     }
     
     a {
@@ -151,7 +150,7 @@ footer{
         color: black;
         text-decoration: none;
         transition: color 0.3s ease;
-        
+
         &:hover {
             color: #e3dadd;
         }
@@ -208,28 +207,150 @@ header h1{
 /* Small Mobile Devices */
 @media (min-width:320px) and (max-width: 484px) {
     .udemy-challenge{
-    display: grid;
-    grid-template-columns: 1fr;
-    }
-    .spotlight-summary {
-        margin: 0 1em 1.7em;
-        line-height: 1.2em;
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    .box-4 .spotlight-summary {
+        margin: 0 0 1.7em;
+        line-height: 1.3em;
         font-size: 1.1em;
     }
+    .box-4 .video-container {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1em;
+        padding: 0 2em;
+        margin: 1em 0;
+        overflow-x: auto;
+    }
+    .box-4 a {
+        font-size: 1.3em;
+    }
+    }
+    .footer-nav ul {
+        gap: 1em;
+    }
+    .footer-nav a {
+        font-size: 1.1em;
+    }
+
+
+
 }
 
 /* Large Mobile Devices */
 @media (min-width:485px) and (max-width: 767px) {
+    .udemy-challenge{
+        display: grid;
+        grid-template-columns: 1fr;
+
+
+    .box-4 .video-container {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1em;
+        padding: 0 2em;
+        margin: 1em 0;
+        overflow-x: auto;
+    }
+    .box-2{
+        padding: 0.8em;
+    }
+    .box-1{
+        padding: 2em;
+    }
+    .box-3{
+        padding: 1.7em;
+    }
+    .box-4 .spotlight-summary {
+        margin: 0 0.1em 1.7em;
+        line-height: 1.4em;
+        font-size: 1.2em;
+    }
+    }
 }
 
 /* Tablets and Small Desktops */
 @media (min-width:768px) and (max-width: 1024px) {
+    .udemy-challenge{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    .box-2{
+        padding: 0.8em;
+    }
+    .box-1{
+        padding: 2em;
+    }
+    .box-3{
+        padding: 1.7em;
+    }
+
+    .box-4 .spotlight-summary {
+        margin: 0 1em 1.7em;
+        font-size: 1.4em;
+    }
+    .box-4 .video-container {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1em;
+        padding: 0 2em;
+        margin: 1em 0;
+        overflow-x: auto;
+    }
+    .footer-nav a {
+        font-size: 1.3em;
+    }
+    }
+
 }
 
 /* Desktops and Laptops */
 @media (min-width:1025px) and (max-width: 1296px) {
+    .udemy-challenge{
+
+    .box-4 .spotlight-summary {
+        margin: 0 3em 1.7em;
+        font-size: 1.5em;
+    }
+    .box-2{
+        padding: 0.8em;
+    }
+    .box-1{
+        padding: 2em;
+    }
+    .box-3{
+        padding: 1.7em;
+    }
+    .footer-nav a {
+        font-size: 1.3em;
+    }
 }
+    .udemy-challenge .box-4 h2 {
+    font-size: 3.2em;
+}
+}
+
 
 /* Large Desktops */
 @media (min-width:1297px) and (max-width: 1680px) {
+    .udemy-challenge {
+        margin: 5em 4em;
+
+    .box-4 .spotlight-summary {
+        margin: 0 3em 1.7em;
+        line-height: 1.4em;
+        font-size: 1.5em;
 }
+}
+    .udemy-challenge .box-4 h2 {
+        font-size: 3.2em;
+    }
+
+    .udemy-challenge .box-4 a {
+        font-size: 1.5em;
+    }
+
+
+}
+
