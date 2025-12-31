@@ -28,6 +28,7 @@ header h1{
     flex-direction: row-reverse;
     justify-content: right;
     padding: 0.5em;
+    margin-bottom: 0;
     gap: 1em;
     list-style-type: none;
     font-size: 1.5em;
