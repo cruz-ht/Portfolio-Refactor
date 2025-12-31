@@ -5,13 +5,14 @@ body {
 }
 
 
+/* HEADER AND NAV BAR */
 header{
     background:#827b7d;
     padding-top: 1em;
     text-align: left;
 }
 header h1{
-    font-size: 2.2em;
+    font-size: 2.5em;
     font-style: oblique;
     font-weight: 400px;
     padding-left: 1em;
@@ -23,7 +24,7 @@ header h1{
     padding: 0.5em;
     gap: 1em;
     list-style-type: none;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 ul li a {
     color: black;
@@ -127,7 +128,7 @@ header h1{
 /* ------------------------------------------- */
 
 /* Tablets and Desktops */
-@media (min-width:768px) and (max-width: 1600px) {
+@media (min-width:768px) and (max-width: 1680px) {
 .footer-nav a {
     font-size: 1.3em;
 }
