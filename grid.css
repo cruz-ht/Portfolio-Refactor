@@ -47,18 +47,15 @@ header h1 {
 /* 3 BOXES GRID */
 .udemy-challenge {
   display: grid;
+  text-align: center;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3em;
+  grid-gap: 2em;
   margin: 5em 1.5em;
 }
 .udemy-challenge .box-4 {
   grid-column: 1/-1;
 }
-.udemy-challenge .box-3 p {
-  margin: 1em 1.8em;
-}
 .udemy-challenge .box-1, .udemy-challenge .box-2, .udemy-challenge .box-3, .udemy-challenge .box-4 {
-  text-align: center;
   background-color: #827b7d;
   border: 0.5em groove #625a5d;
   border-radius: 1em;
@@ -106,6 +103,28 @@ header h1 {
 .udemy-challenge .box-1 a:hover, .udemy-challenge .box-2 a:hover, .udemy-challenge .box-3 a:hover, .udemy-challenge .box-4 a:hover {
   color: black;
   background-color: #e3dadd;
+}
+
+.article-box {
+  text-align: center;
+  margin: 2em 5em 4em;
+  background-color: #a29b9d;
+  border: 0.4em groove #625a5d;
+  border-radius: 1em;
+}
+.article-box h2 {
+  font-style: oblique;
+  font-weight: lighter;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+
+.article {
+  text-align: center;
+  font-style: normal;
+  font-size: 1.3em;
+  margin: 1.8em;
+  line-height: 1.3em;
 }
 
 /* FOOTER */
@@ -199,6 +218,12 @@ footer {
   .udemy-challenge .box-4 a {
     font-size: 1.3em;
   }
+  .article-box {
+    margin: 3em 1.5em;
+  }
+  .article {
+    line-height: 1.2em;
+  }
   .footer-nav ul {
     gap: 1em;
   }
@@ -220,19 +245,19 @@ footer {
     margin: 1em 0;
     overflow-x: auto;
   }
-  .udemy-challenge .box-2 {
-    padding: 0.8em;
-  }
-  .udemy-challenge .box-1 {
-    padding: 2em;
-  }
-  .udemy-challenge .box-3 {
-    padding: 1.7em;
-  }
   .udemy-challenge .box-4 .spotlight-summary {
     margin: 0 0.1em 1.7em;
     line-height: 1.4em;
     font-size: 1.2em;
+  }
+  .article-box {
+    margin: 3em 1.5em;
+  }
+  .article-box h2 {
+    font-size: 2.4em;
+  }
+  .article {
+    font-size: 1.4em;
   }
 }
 /* Tablets and Small Desktops */
@@ -241,14 +266,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .udemy-challenge .box-2 {
-    padding: 0.8em;
-  }
   .udemy-challenge .box-1 {
     padding: 2em;
-  }
-  .udemy-challenge .box-3 {
-    padding: 1.7em;
   }
   .udemy-challenge .box-4 .spotlight-summary {
     margin: 0 1em 1.7em;
@@ -262,30 +281,51 @@ footer {
     margin: 1em 0;
     overflow-x: auto;
   }
-  .udemy-challenge .footer-nav a {
+  .footer-nav a {
     font-size: 1.3em;
+  }
+  .article-box {
+    margin: 3em auto;
+    max-width: 90%;
+  }
+  .article-box h2 {
+    font-size: 2.7em;
+  }
+  .article {
+    font-size: 1.6em;
   }
 }
 /* Desktops and Laptops */
 @media (min-width: 1025px) and (max-width: 1296px) {
+  .udemy-challenge {
+    justify-content: center;
+    align-items: center;
+  }
   .udemy-challenge .box-4 .spotlight-summary {
     margin: 0 3em 1.7em;
     font-size: 1.5em;
   }
-  .udemy-challenge .box-2 {
-    padding: 0.8em;
-  }
   .udemy-challenge .box-1 {
-    padding: 2em;
+    padding: 1.3em 0em;
+    margin: 0 1em;
   }
-  .udemy-challenge .box-3 {
-    padding: 1.7em;
+  .udemy-challenge .box-2, .udemy-challenge .box-3 {
+    padding: 1em 1.7em;
   }
   .udemy-challenge .footer-nav a {
     font-size: 1.3em;
   }
   .udemy-challenge .box-4 h2 {
     font-size: 3.2em;
+  }
+  .article-box {
+    margin: 2em 2em 4em;
+  }
+  .article-box h2 {
+    font-size: 2.7em;
+  }
+  .article {
+    font-size: 1.6em;
   }
 }
 /* Large Desktops */
@@ -303,6 +343,15 @@ footer {
   }
   .udemy-challenge .box-4 a {
     font-size: 1.5em;
+  }
+  .article-box {
+    margin: 2em 4.5em 4em;
+  }
+  .article-box h2 {
+    font-size: 2.9em;
+  }
+  .article {
+    font-size: 1.7em;
   }
 }
 
