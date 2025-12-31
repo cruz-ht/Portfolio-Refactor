@@ -1,0 +1,127 @@
+body {
+  background-image: linear-gradient(to bottom right, #e3dadd, #a29b9d, #e3dadd);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #827b7d;
+  padding-top: 1em;
+  text-align: left;
+}
+header h1 {
+  font-size: 2.5em;
+  font-style: oblique;
+  font-weight: 400px;
+  padding-left: 1em;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+  padding: 0.5em;
+  gap: 1em;
+  list-style-type: none;
+  font-size: 1.5em;
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: rgba(98, 90, 93, 0.5019607843);
+  padding: 0.5em;
+  color: #e3dadd;
+}
+
+/* HIDDEN HAMBURGER MENU */
+.hamburger-Menu {
+  display: none;
+}
+
+/* ------ */
+/* 3 BOXES GRID */
+.udemy-challenge {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin: 5em;
+}
+.udemy-challenge .box-1, .udemy-challenge .box-2, .udemy-challenge .box-3 {
+  background-color: orange;
+  padding: 20px;
+  min-height: 200px;
+}
+
+/* FOOTER */
+footer {
+  background: #827b7d;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em 0;
+}
+
+.footer-nav ul {
+  display: flex;
+  gap: 2.5em;
+  list-style: none;
+}
+.footer-nav a {
+  font-size: 1.2em;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-nav a:hover {
+  color: #e3dadd;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5em;
+  padding-bottom: 1.5em;
+}
+.social-links img {
+  width: 1.7em;
+}
+
+/* -------------Hamburger Menu------------------- */
+@media screen and (max-width: 852px) {
+  .hamburger-Menu {
+    display: block;
+    position: absolute;
+    top: 0.6em;
+    right: 0.5em;
+    width: 3.5em;
+  }
+  header h1 {
+    padding-bottom: 1em;
+  }
+  .navbar.mobile-menu {
+    display: flex;
+  }
+  .navbar {
+    height: 100%;
+    width: 100%;
+    display: none;
+    top: 0;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(130, 123, 125, 0.5019607843);
+  }
+  .navbar ul {
+    flex-direction: column-reverse;
+    gap: 2.5em;
+  }
+}
+/* -------------------------------------------- */
+
+/*# sourceMappingURL=grid.css.map */
